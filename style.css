@@ -1,0 +1,137 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: #666;
+}
+
+.pimg1 {
+    background-image: url(1.jpg);
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url(4.jpg);
+    min-height: 500px;
+}
+
+.pimg3 {
+    background-image: url(5.jpeg);
+    min-height: 500px;
+}
+
+.pimg4 {
+    background-image: url(6.jpg);
+    min-height: 500px;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.textbg {
+    background-color: #282e34;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.section {
+    padding: 50px 80px;
+    text-align: left;
+}
+
+.section-light {
+    background-color: #282e34;
+    color: whitesmoke;
+}
+
+.section-dark {
+    background-color: whitesmoke;
+    color: #282e34;
+}
+
+@media only screen and (max-width: 460px) {
+    .section {
+        padding: 20px;
+    }
+
+    .ptext {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    .section h1, .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    .textbg {
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 461px) and (max-width: 1024px) {
+    .section {
+        padding: 40px 60px;
+    }
+
+    .ptext {
+        font-size: 22px;
+        letter-spacing: 6px;
+    }
+
+    .section h1, .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .section p {
+        font-size: 1.2rem;
+    }
+
+    .textbg {
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .section {
+        padding: 50px 80px;
+    }
+
+    .ptext {
+        font-size: 27px;
+        letter-spacing: 8px;
+    }
+
+    .section h1, .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1.25rem;
+    }
+
+    .textbg {
+        padding: 20px;
+    }
+}
